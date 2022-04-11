@@ -1,13 +1,13 @@
 # FAIR in (biological) practice
 [![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
 
-## General information
+## General information from the original authors
 
 This lesson provides the foundation for practical incorporation of Open Science and FAIR data principles into biological research data managment.
 
 We [(the UoE BioRDM team)](https://www.wiki.ed.ac.uk/display/RDMS/Research+Data+Management+SynthSys+%28f1sysrdm%29+Home) have identified that a gap exists in the knowledge of how to apply FAIR principles to real-life day-to-day biological research. An understanding of the principles of good data management is just as important as the practicalities. Researchers must become conversant with the Open Science ethos, the Reproducible Research movement, and the FAIR principles, to explain their new skills and to recognize or evaluate them in their peers.
 
-The overall goals of the lesson are: 
+The overall goals of the lesson are:
 * To teach solid basic concepts in open science, FAIR guidelines and data management.
 * To teach how to be FAIR in practice.
 * To teach how to organize research workflows in such a way that it is easy to make biological research open, findable and reusable.
@@ -31,7 +31,6 @@ nicely explained in the chapter [Contributing to a Project](http://git-scm.com/b
 by Scott Chacon.
 Look for the tag ![good_first_issue](https://img.shields.io/badge/-good%20first%20issue-gold.svg). This indicates that the maintainers will welcome a pull request fixing this issue.
 
-
 ## Maintainer(s)
 
 Current maintainers of this lesson are
@@ -39,6 +38,11 @@ Current maintainers of this lesson are
 * [Andrés Romanowski](https://github.com/aromanowski)
 * [Tomasz Zielinski](https://github.com/tzielins)
 
+## Note about this specific version of the materials
+
+This lesson is a fork of the [original repository](https://github.com/carpentries-incubator/fair-bio-practice) from the UoE BioRDM team, created with the aim of
+customising the lesson content to participants from [EMBL](https://www.embl.org/). The maintainer of this version of the lesson can be contacted at
+[bio-it@embl.de](mailto:bio-it@embl.de).
 
 ## Authors
 
