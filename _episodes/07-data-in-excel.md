@@ -12,7 +12,6 @@ keypoints:
 - "Include only one piece of information in a cell"
 - "It is easier to store data in the correct form than to clean data for reuse"
 ---
-(2 min teaching)
 
 Tables are one of the best forms of storing and representing information.
 That is why we find them almost everywhere, from a menu in a restaurant, a bank

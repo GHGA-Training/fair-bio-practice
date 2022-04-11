@@ -17,8 +17,7 @@ keypoints:
 ---
 
 ## What are research data repositories?
-(13 min teaching)
-Research data repositories are online repositories that enable the preservation, curation and publication of research 'products'. These repositories are mainly used to deposit research 'data'. However, the scope of the repositories is broader as we can also deposit/publish 'code' or 'protocols' (as we saw with protocols.io). 
+Research data repositories are online repositories that enable the preservation, curation and publication of research 'products'. These repositories are mainly used to deposit research 'data'. However, the scope of the repositories is broader as we can also deposit/publish 'code' or 'protocols' (as we saw with protocols.io).
 
 There are general "data agnostic" repositories, for example:
 * [Dryad](http://datadryad.org),
@@ -31,64 +30,64 @@ Or domain specific, for example:
 * [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) sequence data,
 * [MetaboLights](https://www.ebi.ac.uk/metabolights/) metabolomics data
 * [GitHub](https://github.com/) for code.
- 
+
 Research outputs should be submitted to discipline/domain-specific repositories whenever it is possible. When such a resource does not exist, data should be submitted to a 'general' repository.
 Research data repositories are a key resource to help in data FAIRification as they
 assure Findability and Accessibility.
 
 > ## Exercise 1: Public general record (8 min)
 > Have a look at the following record for data set in Zenodo repository:
-> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg)](https://doi.org/10.5281/zenodo.5045374)  
-> What elements make it FAIR?    
->   
-> > ## Solution  
-> > The elements that make this deposit FAIR are:  
-> >   
-> > Findable (persistent identifiers, easy to find data and metadata):  
-> > - F1. (Meta)data are assigned a globally unique and persistent identifier - YES  
-> > - F2. Data are described with rich metadata (defined by R1 below)- YES  
-> > - F3. Metadata clearly and explicitly include the identifier of the data they describe - YES  
-> > - F4. (Meta)data are registered or indexed in a searchable resource - YES  
-> >   
-> > Accessible (The (meta)data retrievable by their identifier using a standard web protocols):  
-> > - A1. (Meta)data are retrievable by their identifier using a standardised communications protocol - YES  
-> > - A2.  Metadata are accessible, even when the data are no longer available - YES  
-> >   
-> > Interoperable (The format of the data should be open and interpretable for various tools):  
-> > - I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation. - YES  
-> > - I2. (Meta)data use vocabularies that follow FAIR principles - PARTIALLY  
-> > - I3. (Meta)data include qualified references to other (meta)data - YES  
-> >   
-> > Reusable (data should be well-described so that they can be replicated and/or combined in different settings, reuse states with a clear licence):  
-> > - R1. (Meta)data are richly described with a plurality of accurate and relevant attributes - YES  
-> > 	- R1.1. (Meta)data are released with a clear and accessible data usage license - YES  
-> > 	- R1.2. (Meta)data are associated with detailed provenance - YES  
-> > 	- R1.3. (Meta)data meet domain-relevant community standards - YES/PARTIALLY  
-> >    
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5045374.svg)](https://doi.org/10.5281/zenodo.5045374)
+> What elements make it FAIR?
+>
+> > ## Solution
+> > The elements that make this deposit FAIR are:
+> >
+> > Findable (persistent identifiers, easy to find data and metadata):
+> > - F1. (Meta)data are assigned a globally unique and persistent identifier - YES
+> > - F2. Data are described with rich metadata (defined by R1 below)- YES
+> > - F3. Metadata clearly and explicitly include the identifier of the data they describe - YES
+> > - F4. (Meta)data are registered or indexed in a searchable resource - YES
+> >
+> > Accessible (The (meta)data retrievable by their identifier using a standard web protocols):
+> > - A1. (Meta)data are retrievable by their identifier using a standardised communications protocol - YES
+> > - A2.  Metadata are accessible, even when the data are no longer available - YES
+> >
+> > Interoperable (The format of the data should be open and interpretable for various tools):
+> > - I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation. - YES
+> > - I2. (Meta)data use vocabularies that follow FAIR principles - PARTIALLY
+> > - I3. (Meta)data include qualified references to other (meta)data - YES
+> >
+> > Reusable (data should be well-described so that they can be replicated and/or combined in different settings, reuse states with a clear licence):
+> > - R1. (Meta)data are richly described with a plurality of accurate and relevant attributes - YES
+> > 	- R1.1. (Meta)data are released with a clear and accessible data usage license - YES
+> > 	- R1.2. (Meta)data are associated with detailed provenance - YES
+> > 	- R1.3. (Meta)data meet domain-relevant community standards - YES/PARTIALLY
+> >
 > {: .solution}
 {: .challenge}
 
 (4 min discussion)
 
-> ## Exercise 2: Datasets discovery (5 min)  
->  
-> Try to find either: 
+> ## Exercise 2: Datasets discovery (5 min)
+>
+> Try to find either:
 > * similar data sets in Zenodo
 > * data sets of interest for you
->   
-> Hint 1: Verify the completeness/richness of the associated metadata. Is it complete? Are some bits missing?   
-> Hint 2: Does the dataset include a ReadMe.txt file?   
->  
+>
+> Hint 1: Verify the completeness/richness of the associated metadata. Is it complete? Are some bits missing?
+> Hint 2: Does the dataset include a ReadMe.txt file?
+>
 > > ## Solution
-> > Zenodo is a good place to keep your data separate from paper. It gives access to all files, allowing you to cite the data as well (or instead of) the paper.  
-> > However, it is not good for disovery, and does not enforce most metadata!  
-> >   
+> > Zenodo is a good place to keep your data separate from paper. It gives access to all files, allowing you to cite the data as well (or instead of) the paper.
+> > However, it is not good for disovery, and does not enforce most metadata!
+> >
 > {: .solution}
 {: .challenge}
 <br>
 (3 min teaching)
 > ## Minimal data set
-> Minimal data set to consist of the data required to replicate all study findings reported 
+> Minimal data set to consist of the data required to replicate all study findings reported
 > in the article, as well as related metadata and methods.
 >
 > * The values behind the means, standard deviations and other measures reported;
@@ -97,23 +96,23 @@ assure Findability and Accessibility.
 >
 > (no need for raw data if the standard in the field is to share data that have been processed)
 >
-> [PLOS](https://journals.plos.org/plosbiology/s/data-availability)  
->  
+> [PLOS](https://journals.plos.org/plosbiology/s/data-availability)
+>
 {: .callout}
 
-> ## Challenge 3. Domain specific repositories (7 min).  
->  
-> Select one of the following repositories based on your expertise/interests:  
->  
-> - Have a look at mRNAseq accession 'E-MTAB-7933' in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-7933/)  
-> - Have a look at microscopy 'project-1101' in [IDR](https://idr.openmicroscopy.org/webclient/?show=project-1101)  
-> - Have a look at the synthethic part record 'SubtilinReceiver_spaRK_separated' within the 'bsu' collection in [SynBioHub](https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1)  
-> - Have a look at the proteomics record 'PXD013039' in [PRIDE](https://www.ebi.ac.uk/pride/archive/projects/PXD013039)  
-> - Have a look at the metabolomics record 'MTBLS2289' in [Metabolights](https://www.ebi.ac.uk/metabolights/MTBLS2289/descriptors)  
-> - Have a look at the scripts deposit 'RNA-Seq-validation' in [GitHub](https://github.com/PauloFlores/RNA-Seq-validation)  
->  
+> ## Challenge 3. Domain specific repositories (7 min).
+>
+> Select one of the following repositories based on your expertise/interests:
+>
+> - Have a look at mRNAseq accession 'E-MTAB-7933' in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-7933/)
+> - Have a look at microscopy 'project-1101' in [IDR](https://idr.openmicroscopy.org/webclient/?show=project-1101)
+> - Have a look at the synthethic part record 'SubtilinReceiver_spaRK_separated' within the 'bsu' collection in [SynBioHub](https://synbiohub.org/public/bsu/SubtilinReceiver_spaRK_separated/1)
+> - Have a look at the proteomics record 'PXD013039' in [PRIDE](https://www.ebi.ac.uk/pride/archive/projects/PXD013039)
+> - Have a look at the metabolomics record 'MTBLS2289' in [Metabolights](https://www.ebi.ac.uk/metabolights/MTBLS2289/descriptors)
+> - Have a look at the scripts deposit 'RNA-Seq-validation' in [GitHub](https://github.com/PauloFlores/RNA-Seq-validation)
+>
 > Report to the group, what advantages can you see in using a specific repository over a generalist repository like Zenodo.
-> 
+>
 >> ## Solution
 >> Some advantages are:
 >> *   The repository is more relevant to your discipline than a generalist one.
@@ -139,53 +138,53 @@ So how do you go about finding a repository:
 	- [BBSRC](https://bbsrc.ukri.org/research/resources/)
 	- [NERC](https://nerc.ukri.org/research/sites/environmental-data-service-eds/policy/)
 	- [Royal Society](https://royalsociety.org/journals/ethics-policies/data-sharing-mining/)
-	- [Wellcome Open Research](https://wellcomeopenresearch.org/for-authors/data-guidelines)  
-   
+	- [Wellcome Open Research](https://wellcomeopenresearch.org/for-authors/data-guidelines)
+
 - Check [Fairsharing recommendations](https://fairsharing.org/recommendations/?q=)
 	- alternatively, check the [Registry of research data repositories - re3data](https://www.re3data.org/)
 
 > ## Exercise 4: Finding a repository (5 min + 4 min discussion).
 >
-> a) Find a repo for genomics data.  
-> b) Find a repo for microscopy data.  
+> a) Find a repo for genomics data.
+> b) Find a repo for microscopy data.
 > Note to instructor: Fairsharing gives few options, people may give different answer follow up why they selected particular ones.
 >
->> ## Solution  
->>  
->> a) GEO/SRA and ENA/ArrayExpress are good examples. Interestingly these repositories do not issue a DOI.  
->> b) IDR is good examples.   
-> {: .solution}  
-{: .challenge}  
+>> ## Solution
+>>
+>> a) GEO/SRA and ENA/ArrayExpress are good examples. Interestingly these repositories do not issue a DOI.
+>> b) IDR is good examples.
+> {: .solution}
+{: .challenge}
 
 (6 min teaching)
 
 A list of UoE BioRDM's recommended data repositories can be found [here](https://www.wiki.ed.ac.uk/display/RDMS/Suggested+data+repositories).
 
 > ## What comes first? the repository or the metadata?
-> Finding a repository first may help in deciding what metadata to collect and how!  
->   
-{: .callout}  
-  
+> Finding a repository first may help in deciding what metadata to collect and how!
+>
+{: .callout}
+
 > ## Extra features
-> It is also worth considering that some repositories offer extra features, such as running simulations or providing visualisation. For example, [FAIRDOMhub](https://fairdomhub.org/) can run model simulations and has project structures. Do not forget to take this into account when choosing your repository. Extra features might come in handy.  
->  
-{: .callout}  
-  
-> ## Can GitHub be cited?  
-> To make your code repositories easier to reference in academic literature, you can create persistent identifiers for them. Particularly, you can use the data archiving tool in Zenodo to archive a GitHub repository and issue a DOI for it.  
->  
-{: .callout}  
+> It is also worth considering that some repositories offer extra features, such as running simulations or providing visualisation. For example, [FAIRDOMhub](https://fairdomhub.org/) can run model simulations and has project structures. Do not forget to take this into account when choosing your repository. Extra features might come in handy.
+>
+{: .callout}
+
+> ## Can GitHub be cited?
+> To make your code repositories easier to reference in academic literature, you can create persistent identifiers for them. Particularly, you can use the data archiving tool in Zenodo to archive a GitHub repository and issue a DOI for it.
+>
+{: .callout}
 
 ## Evaluating a research data repository
 You can evaluate the repositories by following this criteria:
 - who is behind it, what is its funding
 - quality of interaction: is the interaction for purposes of data deposit or reuse efficient, effective and satisfactory for you?
-- take-up and impact: what can I put in it? Is anyone else using it? Will others be able to find stuff deposited in it? Is the repository linked to other data repositories so I don't have to search tehre as well? Can anyone reuse the data? Can others cite the data, and will depositing boost citations to related papers?  
-- policy and process: does it help you meet community standards of good practice and comply with policies stipulating data deposit? 
+- take-up and impact: what can I put in it? Is anyone else using it? Will others be able to find stuff deposited in it? Is the repository linked to other data repositories so I don't have to search tehre as well? Can anyone reuse the data? Can others cite the data, and will depositing boost citations to related papers?
+- policy and process: does it help you meet community standards of good practice and comply with policies stipulating data deposit?
 
 An interesting take can be found at Peter Murray-Rust's blog post [Criteria for succesful repositories](https://blogs.ch.cam.ac.uk/pmr/2011/08/19/criteria-for-successful-repositories/).
-    
-    
+
+
 > ## Exercise 5: Wrap up discussion (7 min - OPTIONAL).
 > Discuss the following questions:
 > * Why is choosing a domain specific repositories over zenodo more FAIR?

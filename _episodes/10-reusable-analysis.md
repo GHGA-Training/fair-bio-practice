@@ -16,61 +16,60 @@ keypoints:
 - "One single document helps to make your work more understandable, repeatable and shareable"
 ---
 ## Reusable Analysis
-(~50 min teaching)
 
-Data analysis and research are an iterative process. Experimental measurements and 
-their analysis will guide next steps within research, e.g. identification of new 
-targets for drug discovery, the invalidation of a target would likely make us switch 
-to a different target for target validation. Or in large data, or omics experiments 
+Data analysis and research are an iterative process. Experimental measurements and
+their analysis will guide next steps within research, e.g. identification of new
+targets for drug discovery, the invalidation of a target would likely make us switch
+to a different target for target validation. Or in large data, or omics experiments
 data is initially explored, analysis method will be adjusted and modified, and so will experimental procedures if adequate results have not been achieved.
 
-This so called ad-hoc analysis will only after several iterations of data exploration, 
-retries, adjustments, and modifications to experimental procedures lead to selection of suitable analysis methods and parameters. One would then conduct statistical validation 
+This so called ad-hoc analysis will only after several iterations of data exploration,
+retries, adjustments, and modifications to experimental procedures lead to selection of suitable analysis methods and parameters. One would then conduct statistical validation
 of results and generate final results and graphs for publications. This process can be difficult to track using conventional methods such as pen + paper and Excel.
 
-Plotting in R (or Python) is often a natural starting point to learn programming and 
-allows to create more professional scientific plots than those available in Excel. Additionally, throughout ad-hoc data analysis these plots are easier to recreate, and 
-easier to adjust for specific dimensions and journal formatting guidelines, when using 
+Plotting in R (or Python) is often a natural starting point to learn programming and
+allows to create more professional scientific plots than those available in Excel. Additionally, throughout ad-hoc data analysis these plots are easier to recreate, and
+easier to adjust for specific dimensions and journal formatting guidelines, when using
 code.
 
 ## Reusable Computing
 We have previously discussed electronic lab notebooks and their benefit in being FAIR.
-If you are working with large datasets, mathematical models, complex visualisations of 
+If you are working with large datasets, mathematical models, complex visualisations of
 your data then you might already be frustrated by having to copy and paste your figures
-into your electronic lab notebook after each iteration of new code (or generation in 
-Excel). You might also have lost track of which code corresponded to which figure 
+into your electronic lab notebook after each iteration of new code (or generation in
+Excel). You might also have lost track of which code corresponded to which figure
 and why you changed your code last time.
 
 There is a simple solution to this: **Computational notebooks**
 
 ## Computational Notebooks - Jupyter Notebook for FAIR practices
 Computational notebooks are essentially laboratory notebooks for scientific computing.
-Instead of pasting DNA gels alongside lab protocols, researchers embed code, data and 
+Instead of pasting DNA gels alongside lab protocols, researchers embed code, data and
 text to document their computational methods. A free and popular tool that is being
 used across disciplines is **the Jupyter notebook**.
 
-[Jupyter](www.jupyter.org) Notebooks are interactive web applications which allow you 
+[Jupyter](www.jupyter.org) Notebooks are interactive web applications which allow you
 to type and edit lines of code in the programming languages July (Ju), Python (Py), or R,
-hence it's name Jupyter, and view the output (e.g. graphs or calculations) immediately. 
+hence it's name Jupyter, and view the output (e.g. graphs or calculations) immediately.
 The huge benefit of such notebooks is that source code is mixed with documentation, thus
 explaining experimental setup, analysis, results of tables and plots throughout.
 
-What you need to do is write the code that will analyse our data, and explain 
-the narrative behind the experiment and interpretation of the results. For data 
-scientists, this format can drive exploration via interactive computing. This is an 
-environment in which users execute code, see what happens, modify and repeat in an 
+What you need to do is write the code that will analyse our data, and explain
+the narrative behind the experiment and interpretation of the results. For data
+scientists, this format can drive exploration via interactive computing. This is an
+environment in which users execute code, see what happens, modify and repeat in an
 iterative process between researcher and data, in an ad-hoc way.
 As a basic principle Jupyter Notebooks run on a 'kernel' which is responsible in
 execution of the code. Generally this 'kernel' can run on your computer, additionally
-external servers (e.g. our BioRDM server which we use below to host our notebook) can 
-be provided for you to store and analyse your data. Notebooks can also be exported as 
-.pdf and .html files which allow easy sharing of outputs, and other tools such as [nbviewer](https://nbviewer.org/), 
-an open-source service that allows users to render their Jupyter notebooks on GitHub 
-in a web browser without having to install the software or any programming libraries. 
+external servers (e.g. our BioRDM server which we use below to host our notebook) can
+be provided for you to store and analyse your data. Notebooks can also be exported as
+.pdf and .html files which allow easy sharing of outputs, and other tools such as [nbviewer](https://nbviewer.org/),
+an open-source service that allows users to render their Jupyter notebooks on GitHub
+in a web browser without having to install the software or any programming libraries.
 
 ## Working with Jupyter Notebooks
 
-One thing to keep in mind is that your reusable analysis with Jupyter is only ever as 
+One thing to keep in mind is that your reusable analysis with Jupyter is only ever as
 good as your self discipline. Things you want to keep in mind are:
 * document the entire decision process
 * document parameters and their significance
@@ -81,7 +80,7 @@ good as your self discipline. Things you want to keep in mind are:
 
 ## Coding Good Practices
 Before we let you go wild in our subsequent exercises we would like to go highlight a
-few standards and best practices that will help you generate cleaner, more readable, 
+few standards and best practices that will help you generate cleaner, more readable,
 more efficient code. (Note: this code is an example for coding in R, but best practices
 apply to any code)
 
@@ -111,7 +110,7 @@ ggplot(subset(df, light_condition %in% "SD"),
         x = "Genotype",
         y = "Biomas (g)") +
     scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
-```  
+```
 
 ```
 ## Better
@@ -129,9 +128,9 @@ ggplot(subset(df, light_condition %in% "SD"),
         y = "Biomas (g)") +
     scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
 ```
-* use indentations to mark the beginning and end of structures: note the difference in 
-the two code blocks below. The indentations clearly mark that mapping belongs within 
-the function of ggplot, x and y clearly belong to labs. The other functions are being 
+* use indentations to mark the beginning and end of structures: note the difference in
+the two code blocks below. The indentations clearly mark that mapping belongs within
+the function of ggplot, x and y clearly belong to labs. The other functions are being
 passed to the ggplot function and allow to change overall plot appearance.
 
 ```
@@ -155,11 +154,11 @@ ggplot(subset(df, light_condition %in% "SD"),
         y = "Biomas (g)") +
     scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"))
 ```
-* Whilst indentations are great, don't go too deep, as this will make code harder to 
+* Whilst indentations are great, don't go too deep, as this will make code harder to
 read and follow.
-* Don't repeat yourself!! If there is a repetitive task, automate this using a function 
+* Don't repeat yourself!! If there is a repetitive task, automate this using a function
 or already existing packages (R and Python have many data wrangling packages available)
-* Avoid long lines: horizontal block text is easier to read for us humans. Note the 
+* Avoid long lines: horizontal block text is easier to read for us humans. Note the
 difference between these two code blocks
 
 ```
@@ -195,10 +194,10 @@ ggplot(subset(df, light_condition %in% "SD"), # subset only SD from light condit
     scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9")) # change colour of groups
 ```
 
-To show you how easy it is to work with Jupyter Notebooks, we have 
-created an exercise for you where we will work on "real-life" data 
+To show you how easy it is to work with Jupyter Notebooks, we have
+created an exercise for you where we will work on "real-life" data
 from an experiment looking at circadian influence on plants following
-short-day and long-day light exposure. We will create some graphs and 
+short-day and long-day light exposure. We will create some graphs and
 test whether there are differences between our genotypes of arabidopsis
 using the language R as an example.
 
@@ -265,13 +264,13 @@ using the language R as an example.
 > 2. Press the Run button in the toolbar and the Markdown of the cell will
 > be rendered again and you can see the text shows as previously.
 > 3. We now want to add some details about the "light_results.txt" file
-> which is being loaded. To add a cell above the code, click the cell 
+> which is being loaded. To add a cell above the code, click the cell
 > currently above the first lines of code and click the "+" in the toolbar.
 > This creates a cell below selected cell.
 > 4. Now add a note about the file which is being loaded and the purpose
 > of the subsequent analysis: e.g. Loading of results following short- and
 > long-day light exposure on arabidopsis, followed by visualisation of
-> differences in chlorophyll/biomas etc... content between genotypes on 
+> differences in chlorophyll/biomas etc... content between genotypes on
 > short-days and long-days. To show the cell as Markdown and not code,
 > make sure "Markdown" is selected in the toolbar.
 > 5. To remove a cell, select it and click on the scissors icon in the
@@ -295,7 +294,7 @@ Imagine your collaborators have shared this experiment measuring biomas of
 *Arabidopsis* with you and you were able to duplicate and follow their
 entire analysis from start to finish, including interpretation of data.
 Now you are interested in analysing what biomas look like on long-days.
-You are in luck! 
+You are in luck!
 
 Because Jupyter Notebooks are so easy to handle you simply need to copy
 and paste the already existing code your collaborators shared and adapt
@@ -316,9 +315,9 @@ figures are being saved to avoid duplication.
 >> ## Solution
 >> The following code will result in your new graph:
 >> ~~~
->> ggplot(subset(df, light_condition %in% "LD"), 
+>> ggplot(subset(df, light_condition %in% "LD"),
 >> # subset only SD from >>light condition column for plotting
->>       mapping = aes(x = genotype, y = biomas, fill = genotype)) + 
+>>       mapping = aes(x = genotype, y = biomas, fill = genotype)) +
 >> # x-axis shows genotype, y-axis shows biomas
 >>    geom_boxplot(alpha=0.3) +
 >>    labs(title = "Biomas per Genotype on long days",
@@ -339,7 +338,7 @@ figures are being saved to avoid duplication.
 summary(res.aov.LD)
 >> ~~~
 >> {: .source}
->> 
+>>
 >> The following code will result in Tukey multiple pairwise-comparison
 > testing.
 >> ~~~
@@ -364,7 +363,7 @@ We have now managed to not only reproduce code, but we were able to add to the a
 
 > ## Exercise 5: Accessibility of Jupyter Notebooks (5 min)
 >
-> On a scale from -2 to 2, how do you feel about the following statements (R is interchangeable with Python), where -2 (strongly disagree), 0 no 
+> On a scale from -2 to 2, how do you feel about the following statements (R is interchangeable with Python), where -2 (strongly disagree), 0 no
 opinion to +2 strongly agree:
 > * making graphs for a subset of data is easier in R than in Excel
 > * it is easier to filter for data in R than in Excel
@@ -390,10 +389,10 @@ opinion to +2 strongly agree:
 >## For instructors: Advanced teaching
 > For experienced Notebook users who normally use Python:
 > * Create your own notebook using Python instead of R, replicate the above code-output
-> 
+>
 > For experienced R users:
 > * Plot both short- and long-day light conditions as a grouped boxplot
->  
+>
 >> ## Solution
 >> ```
 >> ggplot(df, mapping = aes(x = genotype, y = biomas, fill=light_condition)) +

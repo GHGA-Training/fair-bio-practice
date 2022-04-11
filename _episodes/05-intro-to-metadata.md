@@ -15,7 +15,6 @@ keypoints:
 - "Metadata is key for data reuse and complying with FAIR guidelines."
 - "Metadata should be added incrementally through out the project"
 ---
-(5 min teaching)
 
 ## What is (or are) metadata?
 
@@ -26,8 +25,8 @@ Simply put, metadata is data about the data. Sound confusing? Lets clarify: meta
 This is a confocal microscopy image of a *C. elegans* nematode strain used
 as a proteostasis model (Pretty! Isn't it?). The image is part of the raw data
 associated to [Goya et al., 2020](https://doi.org/10.1016/j.celrep.2019.12.078),
-which was deposited in a Public Omero Server   
-[Project](https://publicomero.bio.ed.ac.uk/webclient/?show=project-58)  
+which was deposited in a Public Omero Server
+[Project](https://publicomero.bio.ed.ac.uk/webclient/?show=project-58)
 [Figure1 set](https://publicomero.bio.ed.ac.uk/webclient/?show=dataset-231)
 
 <img src="../fig/04-microscopy_with_metadata.png" alt="nematode_confocal_microscopy_image" width="600"/>
@@ -119,10 +118,10 @@ resource that allow people to discover and identify it; E.g.
 authors, title, abstract, keywords, persistent identifier, related
 publications, etc.
 * **Structural metadata:** data about how a dataset or resource
-came about, but also how it is internally structured. E.g. the unit 
-of analysis, collection method, sampling procedure, sample size, 
-categories, variables, etc. Structural metadata have to be gathered by 
-the researchers according to best practice in their research community 
+came about, but also how it is internally structured. E.g. the unit
+of analysis, collection method, sampling procedure, sample size,
+categories, variables, etc. Structural metadata have to be gathered by
+the researchers according to best practice in their research community
 and will be published together with the data.
 
 Descriptive and structural **metadata should be added
@@ -203,7 +202,7 @@ and guidelines called **Minimal Information Standards**.
 >
 > Look at ***Minimum Information about a Neuroscience Investigation (MINI) Electrophysiology***
 > [Gibson, F. et al. Nat Prec (2008)](https://www.nature.com/articles/npre.2008.1720.1.pdf).
-> which contains recommendations for reporting the use of electrophysiology in a neuroscience study.  
+> which contains recommendations for reporting the use of electrophysiology in a neuroscience study.
 > (*Neuroscience (or neurobiology) is the scientific study of the nervous system*).
 >
 > Scroll to *Reporting requirement* and decide which of the points 1-8 are:
@@ -213,9 +212,9 @@ and guidelines called **Minimal Information Standards**.
 >
 > > ## Solution
 > > Possible answers:
-> > * a) 2, 3, 4, 5, 6, 8a-b 
+> > * a) 2, 3, 4, 5, 6, 8a-b
 > > * b) 3, 7
-> > * c) 2, 3, 4, 5, 6 
+> > * c) 2, 3, 4, 5, 6
 > >
 > {: .solution}
 {: .challenge}
@@ -223,8 +222,8 @@ and guidelines called **Minimal Information Standards**.
 
 What if there are no metadata standards defined for your data / field of research?
 
-Think about the minimum information that someone else (from your lab or from any 
-other lab in the world) would need to know  to be able to work with your dataset 
+Think about the minimum information that someone else (from your lab or from any
+other lab in the world) would need to know  to be able to work with your dataset
 without any further input from you.
 
 **Think as a consumer** of your data not the producer!
@@ -258,7 +257,7 @@ without any further input from you.
 {: .challenge}
 
 ## Metadata and FAIR guidelines
-Metadata provides extremely valuable information for us and others to be able to 
+Metadata provides extremely valuable information for us and others to be able to
 interpret, process, reuse and reproduce the research data it accompanies.
 
 Because metadata are data about data, all of the FAIR principles i.e.

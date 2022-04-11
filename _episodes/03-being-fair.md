@@ -14,7 +14,6 @@ keypoints:
 - "FAIR stands for Findable Accessible Interoperable Reusable"
 - "FAIR assures easy reuse of data underlying scientific findings"
 ---
-(7 min teaching)
 
 We have seen how Open practices can benefit both scientific community as
 a whole and individual practitioner.
@@ -52,8 +51,8 @@ data from published biological papers.
 > Find details of how to separate and transfer this large protein in
 > the reference paper.
 >
-> * Hint 1: Methods section has a Western blot analysis subsection.  
-> * Hint 2: Follow the references.  
+> * Hint 1: Methods section has a Western blot analysis subsection.
+> * Hint 2: Follow the references.
 >
 > Would you say that the methods was Findable? Accessible? Reusable?
 >
@@ -78,13 +77,13 @@ data from published biological papers.
 > ## Impossible numbers
 >
 > Ikram 2014 (https://doi.org/10.1093/jxb/err244) paper contains data about various metabolites in
-> different accessions (genotypes) of Arabidopsis plant. 
-> You would like to calculate average nitrogen content in plants grown under normal and nitrogen 
-> limited conditions. 
+> different accessions (genotypes) of Arabidopsis plant.
+> You would like to calculate average nitrogen content in plants grown under normal and nitrogen
+> limited conditions.
 > Please calculate the average (over genotypes) nitrogen content for the two experimental conditions.
 >
-> * Hint 1. Data are in Supplementary data   
-> * Hint 2. Search for nitrogen in paper text to identify the correct data column.  
+> * Hint 1. Data are in Supplementary data
+> * Hint 2. Search for nitrogen in paper text to identify the correct data column.
 >
 {: .challenge}
 
@@ -284,7 +283,7 @@ or [Apache license](http://www.apache.org/licenses/).
 
 > ## Exercise 2: Example of FAIR data (4 min)
 >
-> Uniprot is a high-quality and freely accessible resource of protein sequence 
+> Uniprot is a high-quality and freely accessible resource of protein sequence
 > and functional information. Have a look at the record of the GFP protein:
 > [https://www.uniprot.org/uniprot/P42212](https://www.uniprot.org/uniprot/P42212)
 >

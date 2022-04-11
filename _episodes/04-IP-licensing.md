@@ -14,7 +14,6 @@ keypoints:
 - "For data use Creative Commons Attribution (CC BY) license"
 - "For code use open source licenses such as MIT, BSD, or Apache license"
 ---
-(13 min teaching)
 
 ## Open Science and Intellectual property
 
@@ -94,7 +93,7 @@ is it clear what you can do with software code under this licence?
 > 3. Compare the full wording of CC BY
 [https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode)
 can you guess why the MIT licence is currently the most popular for open source code?
-> 
+>
 >> ## Solution
 >>
 >> 1. CC BY license states material can be reproduced, shared, in whole or in part, unless where exceptions and limitations are stated. Attributions must be made to the Licensor.

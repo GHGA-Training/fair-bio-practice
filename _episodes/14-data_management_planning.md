@@ -16,7 +16,6 @@ keypoints:
 - "Data management is a continuous process during a project."
 - "A DMP is the best way to prepare for a new project."
 ---
-(5 min teaching)
 
 ## The research data life cycle
 The Research Data Life Cycle is composed of a sequential series of stages/steps in which data is produced, processed and shared.
@@ -99,7 +98,7 @@ You should think about:
 - How others can use your data
 - How much it will all cost
 
-Most funders require a DMP with grant applications. 
+Most funders require a DMP with grant applications.
 Some institutions even ask their PhD students to prepare a DMP for their PhD project.
 
 
@@ -184,7 +183,7 @@ to discuss folder structures, but, they should emphasize the **data safety
 {: .challenge}
 
 > ## Exercise 2, part 2: Explore each outhers DMPs (10 min)
-> Now, take a look at the other group's DMP and make comments/suggestions on how 
+> Now, take a look at the other group's DMP and make comments/suggestions on how
 > to improve it (at the end of the DMP)
 >
 {: .challenge}

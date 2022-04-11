@@ -15,9 +15,8 @@ keypoints:
 - "Version control system helps maintaining good practices"
 - "Version control system keeps your work safe"
 ---
-(1 min teaching)
 
-![Figure 1. Versioning Hell](../fig/ew-versions.png)  
+![Figure 1. Versioning Hell](../fig/ew-versions.png)
 *from: Wit and wisdom from Jorge Cham (http://phdcomics.com/)*
 
 Our projects are not static we:
@@ -34,7 +33,7 @@ All those actions introduce change to files of our project.
 > ## Exercise 1: Problems with change (5 min)
 >
 > Which of these issues can you relate to?
-> 
+>
 > * I have fifteen versions of this file - which one do I use?
 > * I can’t remake this figure from last year
 > * I slightly modified my code in one place, everything stopped working
@@ -56,7 +55,7 @@ All those actions introduce change to files of our project.
 When introducing changes to files and their content, we:
 * overwrite old content or loose whole files (hoping they won't be needed)
 * may introduce side effects, e.g. renaming files may break analysis pipelines
-* introduce multiple changes to multiple files which should be treated as one change, 
+* introduce multiple changes to multiple files which should be treated as one change,
 e.g. new version of a figure and a paragraph that describes it
 * need to collate concurrent changes from collaborators e.g. "resolve conflicts"
 
@@ -66,8 +65,8 @@ It identifies (tags) a collection of changes to files and references them,
 potentially allowing to come back to the state before or after that change to
 retrieve details.
 
-With version control file names do not reflect their versions. Information about versions and changes 
-are kept separate from the files. 
+With version control file names do not reflect their versions. Information about versions and changes
+are kept separate from the files.
 
 It is possible to achieve version control manually by a systematic approach for managing changes.
 
@@ -121,30 +120,30 @@ two main parts:
     > (discussed below), this approach costs less than the time it would
     > take to select files by hand for copying.
 
-3.  ***Keep changes small.***  
-    Each change should not be too large as to make the change tracking irrelevant. 
+3.  ***Keep changes small.***
+    Each change should not be too large as to make the change tracking irrelevant.
 	For example, a single change called "Data for paper" adding or changing
-	several different type of data sets, and their analysis scripts and results 
+	several different type of data sets, and their analysis scripts and results
 	is likely too large, as this doesn't allow to distinguish between
 	changes to different components of the analysis.
-	Similarly, changes should not be broken up into pieces that are too small.   
-	As a rule of thumb a good size for a single change is a group of edits that 
+	Similarly, changes should not be broken up into pieces that are too small.
+	As a rule of thumb a good size for a single change is a group of edits that
 	you could imagine wanting to undo in one step.
 
-4. ***Store each project in a folder that is mirrored off the researcher's working machine***  
-	Use a system such as Dropbox or or Google Drive and synchronize the folder at least daily. 
+4. ***Store each project in a folder that is mirrored off the researcher's working machine***
+	Use a system such as Dropbox or or Google Drive and synchronize the folder at least daily.
 	It may take a few minutes, but that time is repaid the moment a laptop is stolen or its hard drive fails.
 
-5. ***Share changes frequently.***  
-	Everyone working on the project should share and incorporate changes from others on a regular basis. 
-	Do not allow individual investigator's versions of the project repository to drift apart, 
+5. ***Share changes frequently.***
+	Everyone working on the project should share and incorporate changes from others on a regular basis.
+	Do not allow individual investigator's versions of the project repository to drift apart,
 	as the effort required to merge differences goes up faster than the size of the difference.
-	
+
 
 > ## Exercise 2: Manual versioning (5 min)
 >
 > Which of these issues does manual versioning help to tackle?
-> 
+>
 > * I have fifteen versions of this file and I don’t know which one to use
 > * I can’t remake this figure from last year
 > * I slightly modified my code in one place, everything stopped working
@@ -170,16 +169,16 @@ two main parts:
 > * updated matplot library to version 3.4.3 and regenerated figures
 > * added panel with protein localisation to Figure 3 and its discussion in the text
 > * reverted to the previous version of the abstract text as the manuscript reached word limits
-> * cleaned the strain inventory  
+> * cleaned the strain inventory
 > Recent freezer cleaning and ordering indicated a lot of problem with the strains data. The missing physical samples were removed from the table, duplicated ids are marked for checking with PCR. The antibiotic resistence were moved from phenotype description to its own column.
-> * new regulation heatmap  
+> * new regulation heatmap
 > As suggested by Will I used the normalization and variance stabilization procedure from Hafemeister et al prior to clustering and heatmap generation
 >
-> The larger the project (measured either in: collaborators, file numbers, or workflow complexity) the more detailed the change description should be.  
-> While your personal project can contain brief descriptions, larger projects should always contain information about the motivation behind the change and the consequences. 
+> The larger the project (measured either in: collaborators, file numbers, or workflow complexity) the more detailed the change description should be.
+> While your personal project can contain brief descriptions, larger projects should always contain information about the motivation behind the change and the consequences.
 >
 {: .callout}
- 
+
 This manual procedure satisfies the requirements of version tracking without
 needing new tools. If multiple researchers are working on the same
 project they will need to coordinate so that only a single
@@ -189,7 +188,7 @@ files whenever a backup copy is made.
 
 What the manual process described above requires most is
 self-discipline. The version control tools that underpin our second
-approach don't just accelerate the manual process: they also automate 
+approach don't just accelerate the manual process: they also automate
 some steps while enforcing others and thereby deliver more reliable results.
 
 
@@ -212,10 +211,10 @@ some steps while enforcing others and thereby deliver more reliable results.
 >> *   for text files the actual change can be visible
 >> *   the description text gives an idea of the change
 >>
->> What could be improved  
+>> What could be improved
 >> *   The pig files should probably be recorded in smaller chunks (commits). The raw data and cleaned data could be added separetely unless they all were captured at the same time.
 >> *   Rather than general "Readme update" a more specific description could be provided "Reformatted headers and list"
->> *   some of the Ballous changes could do with more detailed descriptions, for example why the change took place in case of IQ_TREE entries 
+>> *   some of the Ballous changes could do with more detailed descriptions, for example why the change took place in case of IQ_TREE entries
 > {: .solution}
 {: .challenge}
 
@@ -224,10 +223,10 @@ some steps while enforcing others and thereby deliver more reliable results.
 (13 min teaching)
 
 > ## How Version Control Systems Work
-> 
-> A version control system is a tool that keeps track of file changes for us and helps us version and merge our files. 
-> It allows you to decide which changes make up the next version, called a commit, and keeps useful metadata about them. 
-> The complete history of commits for a particular project and their metadata make up a repository. 
+>
+> A version control system is a tool that keeps track of file changes for us and helps us version and merge our files.
+> It allows you to decide which changes make up the next version, called a commit, and keeps useful metadata about them.
+> The complete history of commits for a particular project and their metadata make up a repository.
 >
 > A version control system stores snapshots of a project's files in a
 > repository. Users modify their working copy of the project and then
@@ -240,15 +239,15 @@ some steps while enforcing others and thereby deliver more reliable results.
 >
 > Crucially, if several people have edited files simultaneously, the
 > version control system will detect the collision and require them to
-> resolve any conflicts. 
+> resolve any conflicts.
 {: .callout}
 
-![Figure 2. How VCS works](../fig/vc-play-changes.svg)  
-![](../fig/vc-play-changes2.svg)  
-![](../fig/vc-merges.svg)  
+![Figure 2. How VCS works](../fig/vc-play-changes.svg)
+![](../fig/vc-play-changes2.svg)
+![](../fig/vc-merges.svg)
 *from: Version control with git (https://carpentries-incubator.github.io/git-novice-branch-pr/01-basics/)*
 
-  
+
 Tool-based version control has several benefits over manual version
 control:
 
@@ -272,13 +271,13 @@ If so, they identify conflicts and merge changes.
 
 
 We believe that the best tools for tracking changes are the version
-control systems that are used in software development such as Git. 
+control systems that are used in software development such as Git.
 Git keeps track of what was changed in a file
 when and by whom and it can synchronize changes to a central server (GitHub) so that
-many users can manage changes to the same set of files. 
+many users can manage changes to the same set of files.
 
 Simplifying Git is a local program (like Word) that runs on your machine and knows how to track changes.
-Github is an online system that can communicate with Git and propagate your changes to other computers 
+Github is an online system that can communicate with Git and propagate your changes to other computers
 (like OneDrive can do for Word documents).
 
 
@@ -307,7 +306,7 @@ reviewers, editors, and readers.
 {: .challenge}
 
 > ## Version Control System and FAIR
-> Looking at the reasons to use a version control system (VCS) in research, 
+> Looking at the reasons to use a version control system (VCS) in research,
 > how does using VCS help in being FAIR?
 >
 >> ## Solution
@@ -323,13 +322,13 @@ reviewers, editors, and readers.
 > If you do any form of scientific computing: Python, R, Matlap or even bash script you simply must learn git and
 > use it on a daily basis (no excuses).
 >
-> ![Figure 3. Using Git](../fig/using-git.png)  
-> *from: xkcd (https://xkcd.com/1597/)* 
+> ![Figure 3. Using Git](../fig/using-git.png)
+> *from: xkcd (https://xkcd.com/1597/)*
 >
-> For lab-bench biologists git can have a steep learning curve. 
-> It was designed and developed for and by Linux developers so 
-> ... user experience has never been its top priority. 
-> We encourage biologist to follow the best practice of manual versioning and then try to see git in actions. 
+> For lab-bench biologists git can have a steep learning curve.
+> It was designed and developed for and by Linux developers so
+> ... user experience has never been its top priority.
+> We encourage biologist to follow the best practice of manual versioning and then try to see git in actions.
 > We are sure that after manual experience you apreciate the benefits of git, and accept the learning overhead.
 >
 > Some git resources:
@@ -346,10 +345,10 @@ reviewers, editors, and readers.
 ## Semantic versioning (Optional)
 (10 min teaching)
 Although we recommend to record small changes often a particular point in time
-(a set of changes) has its logical meaning. 
+(a set of changes) has its logical meaning.
 
 Probably all of us made folders: submission, revision 1, revision 2
-when publishing an article. Each containing the complete set of files. 
+when publishing an article. Each containing the complete set of files.
 
 In software engineering terminology, such as the "official" point in time (especially if it is meant to be consumed by others) is called ***release***.
 
@@ -361,22 +360,22 @@ is well known and called "dependency hell". To help deal with this problem, ***s
 
 In brief, it is a way for numbering software releases (naming particular versions).
 
-![Figure 4. Semantic versioning](../fig/semver-def.png)  
+![Figure 4. Semantic versioning](../fig/semver-def.png)
 *from: Semantic versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
 
-Semantic Versioning is a 3-component number in the format of X.Y.Z, where:  
+Semantic Versioning is a 3-component number in the format of X.Y.Z, where:
 
 * The leftmost number X denotes a major version. Major versions introduce "breaking changes",
 i.e. changes will affect other software that interacts with it. For example, if the file format for inputs or outputs changes it is a breaking change as the existing files cannot be read (in case of input change) or the output files cannot be read. Another example are renaming program functions or changing their call parameters.
 
-* Y stands for a minor version. It is used for the release of new functionality in the system. 
-When you increase the minor version you communicate that the software can be used exactly as the old version but it also offers some new features. 
-For example, your plot library can now plot in colors not only black and white or the new version of software can output the results to both Excel and CSV files rather than just CSV. 
+* Y stands for a minor version. It is used for the release of new functionality in the system.
+When you increase the minor version you communicate that the software can be used exactly as the old version but it also offers some new features.
+For example, your plot library can now plot in colors not only black and white or the new version of software can output the results to both Excel and CSV files rather than just CSV.
 
-* Z stands for a Patch Versions: Versions for patches are used for bug fixes and security updates. 
-There are no functionality changes in the patch version upgrades. 
+* Z stands for a Patch Versions: Versions for patches are used for bug fixes and security updates.
+There are no functionality changes in the patch version upgrades.
 
-![Figure 5. Semantic versioning](../fig/semver-upgrade2.png)  
+![Figure 5. Semantic versioning](../fig/semver-upgrade2.png)
 *from: Semantic versioning, Parikshit Hooda (https://www.geeksforgeeks.org/introduction-semantic-versioning/)*
 
 When you increase the Major version you zero the remaining ones, when you increase Minor you zero the patch number.
@@ -385,13 +384,13 @@ Having "." between major, minor and patch assures that when lexically sorted, ma
 
 	1.91.12
 	1.91.8
-	2.13.3-alpha 
-	2.14-alpha 
+	2.13.3-alpha
+	2.14-alpha
 	2.15-beta
 	3.0.923
- 
-Semantic versioning permits dependency software to automatically choose the most recent version of a library, 
-or automatically update libraries to a patched version while avoiding problems with changing to new major release. 
+
+Semantic versioning permits dependency software to automatically choose the most recent version of a library,
+or automatically update libraries to a patched version while avoiding problems with changing to new major release.
 
 While semantic versioning is mainly used for software, it is also adopted for datasets or collaborative documents,
 as it communicates the *severity of changes*. For example if you as the co-author read: `manuscript.2.1.5.docx` and now there is `manuscript.2.1.10.docx` you probably don't need to do anything, while `manuscript.3.0.10.docx` should capture your attention.
@@ -407,14 +406,14 @@ For data and documents often only major.minor numbers are used.
 > * d) 1.12.2
 >
 > 2. You use library fair.2.3.1 to automatically upload your data after analysis.
-> You found out that there is avaialble new version of the library fair.4.3.1. 
+> You found out that there is avaialble new version of the library fair.4.3.1.
 > Which situation is the most probable?
 > * a) fair.4.3.1 uploads data twice as fast as fair.2.3.1
 > * b) you need to reserve time to test the new version and adapt your analysis pipeline to work with it
 > * c) both versions offer the same features and bug fixes as they have the same minor/path version 3.1
 >
 > 3. You developed code that helps to plot detrended and normalized data, the last release has version 1.2.1.
-> You added Z-score to the available normalization methods and fixed the spelling errors in the user messages. 
+> You added Z-score to the available normalization methods and fixed the spelling errors in the user messages.
 > Which version number should you give to the new realease:
 > * a) 2.0.0
 > * b) 1.3.0
@@ -422,16 +421,16 @@ For data and documents often only major.minor numbers are used.
 > * d) 1.2.2
 > * e) 2.2.1
 >
-> 4. Your group releases data about studied cancer patients following semantic versioning. 
-> The last data sets are released as 1.11, you added data from a new patient,  
+> 4. Your group releases data about studied cancer patients following semantic versioning.
+> The last data sets are released as 1.11, you added data from a new patient,
 > what version should you use:
 > * a) 1.12
 > * b) 2.11
 > * c) 2.0
 >
-> 5. You were asked to better anonymize the above cancer data (v1.11) in future releases. 
+> 5. You were asked to better anonymize the above cancer data (v1.11) in future releases.
 > Instead of data and time of patient visit you
-> release only the year, the hospital names have been encoded and patient age has been obscured by random noise.  
+> release only the year, the hospital names have been encoded and patient age has been obscured by random noise.
 > What version should you use:
 > * a) 1.12
 > * b) 2.11
@@ -444,7 +443,7 @@ For data and documents often only major.minor numbers are used.
 >> 3. b
 >> 4. a
 >> 5. c
->> 
+>>
 > {: .solution}
 {: .challenge}
 
@@ -457,7 +456,7 @@ For data and documents often only major.minor numbers are used.
 >> ## Solution
 >>
 >> Release version helps to be findable, the semantic notations help in achieving interoperability, reuse and reproducibility.
->> 
+>>
 > {: .solution}
 {: .challenge}
 

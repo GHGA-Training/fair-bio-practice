@@ -15,8 +15,6 @@ keypoints:
 - "Templates allow for automatisation of processes"
 ---
 
-(13 min teaching)
-
 ## What are Templates
 Templates are documents with a pre-determined layout and style which allow for reproducibility
 of new documents based on the same layout/pattern/style/guidelines. For example a useful
@@ -28,7 +26,7 @@ genotype, if short- or light-day.
 > Use of such templates is incredibly convenient. If we were to print labels for tubes, using a
 > template we could print an entire batch at once instead of having to do it label by label or
 > hand write each individual one. Overall templates:
-> 
+>
 > * save time
 > * enforce best practices (e.g. naming standards, using PIDs)
 > * provide guidelines for other users of the template
@@ -51,7 +49,7 @@ Templates could be anything with a pre-determined layout and purpose to be used 
 > * a measurement (PCR on robot etc...)
 > * experiment (e.g. gene levels in response to stress)
 >
-> In Excel or as a Document (txt/word) or Benchling (if you fancy using it!), 
+> In Excel or as a Document (txt/word) or Benchling (if you fancy using it!),
 > also provide some example data.
 >
 > Think about:

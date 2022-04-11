@@ -14,8 +14,6 @@ keypoints:
 - "Automatic data aggregations needs standarised metadata formats and values"
 ---
 
-(16 min teaching)
-
 ## Being precise
 
 If the metadata purpose is to help understand the data, it has
@@ -66,7 +64,7 @@ of biological concepts and entities:
 * metabolic reactions, enzymes e.g [KEGG](https://www.genome.jp/kegg/)
 
 [BioPortal](https://bioportal.bioontology.org/) or
-[NCBI](https://www.ncbi.nlm.nih.gov/)  
+[NCBI](https://www.ncbi.nlm.nih.gov/)
 are good places to start searching for a registry or a term.
 
 
@@ -87,10 +85,10 @@ are good places to start searching for a registry or a term.
 
 > ## Exercise 2: Public ID in action 2 (3 min)
 > * The second metadata example (the Excel table):
-> contains two other types of public IDs.  
+> contains two other types of public IDs.
 > ![Metadata in data table example](../fig/04-metadatafull_spreadsheet.png)
 > *Figure credits: Tomasz Zielinski and Andrés Romanowski*
->   
+>
 > 	- Can you find the public IDs?
 > 	- Can you find the meaning behind those Ids?
 >
@@ -107,7 +105,7 @@ are good places to start searching for a registry or a term.
 
 > ## Disambiguation
 >  In academic disciplines we quickly run into problems of naming standards e.g.:
->  
+>
 >  * Escherichia coli
 >  * EColi
 >  * E. coli
@@ -115,7 +113,7 @@ are good places to start searching for a registry or a term.
 >  * Kanamycin A
 >  * Kanamycin
 >  * Kanam.
->  * Kan. 
+>  * Kan.
 {: .discussion}
 
 Ontologies represent a standardised, formal naming system and define categories, properties and relationships between data. Ontologies allow to describe properties of a subject area and how they are related (e.g. taxonomy). This reduces the complexity of the data through use of controlled vocabulary.
@@ -184,9 +182,9 @@ Ontologies add a further dimension to controlled vocabularies and taxonomy. They
 > * * Drosophila melanogaster
 >
 > <img src="../fig/06-ontologies.png" alt="ontology-example" width="600"/>
-> *Figure credits: Tomasz Zielinski*  
+> *Figure credits: Tomasz Zielinski*
 >
-{: .callout}  
+{: .callout}
 <br>
 <br>
 #### Here some links to help you find the right ontologies for your research:
